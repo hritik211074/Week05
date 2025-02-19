@@ -9,6 +9,7 @@ import java.io.IOException;
 class ConvertListIntoJson {
     // Person class
     static class Person {
+
         // Attributes of Person
         private String name;
         private int age;
