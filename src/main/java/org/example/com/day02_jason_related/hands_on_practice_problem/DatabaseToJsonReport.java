@@ -1,4 +1,4 @@
-package org.example.com.day02_jason.hands_on_practice_problem;
+package org.example.com.day02_jason_related.hands_on_practice_problem;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
