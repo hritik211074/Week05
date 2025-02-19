@@ -14,6 +14,7 @@ public class ConvertJavaObjectIntoJson {
     public ConvertJavaObjectIntoJson(String brand, String model, int year) {
         this.brand = brand;
         this.model = model;
+
         this.year = year;
     }
 
