@@ -20,6 +20,7 @@ class Person {
 }
 
 public class ListToJson {
+
     public static void main(String[] args) {
         // Create a list of Person objects
         List<Person> people = List.of(new Person("Alice", 30), new Person("Bob", 25));
