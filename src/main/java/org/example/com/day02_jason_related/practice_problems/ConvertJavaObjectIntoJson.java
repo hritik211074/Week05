@@ -5,6 +5,7 @@ import org.json.JSONObject;
 // Create Cae class to convert object into JSON
 public class ConvertJavaObjectIntoJson {
     // Attributes of car
+
     private String brand;
     private String model;
     private int year;
