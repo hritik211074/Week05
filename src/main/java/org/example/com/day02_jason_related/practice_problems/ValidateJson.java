@@ -10,7 +10,6 @@ class ValidateJson {
     public static void main(String[] args) {
         // Create an instance of Object mapper
         ObjectMapper objectMapper = new ObjectMapper();
-
         try {
             // Read JSON file and parse it into JsonNode
             JsonNode jsonNode = objectMapper.readTree(new File("D:\\Training_Assessment_Week_05\\src\\main\\java\\org\\example\\com\\day02_jason\\practice_problems\\Person.Json"));
