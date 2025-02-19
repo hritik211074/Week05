@@ -13,7 +13,6 @@ public class EncryptDecryptCSVData {
 
     private static final String ALGORITHM = "AES";
     private static final String SECRET_KEY = "1234567890123456"; // 16-byte key for AES-128
-
     public static void main(String[] args) {
         String csvFilePath = "employees.csv"; // Path to the CSV file
         String encryptedCsvFilePath = "encrypted_employees.csv"; // Path to the encrypted CSV file
