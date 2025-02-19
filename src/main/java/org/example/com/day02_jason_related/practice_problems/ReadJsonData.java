@@ -9,6 +9,7 @@ import java.io.IOException;
 
 // Create ReadJsonFile class to read JSON file and extract specific fields
 class ReadJsonData {
+
     public static void main(String[] args) {
         try {
             // Read JSON file content as a string
