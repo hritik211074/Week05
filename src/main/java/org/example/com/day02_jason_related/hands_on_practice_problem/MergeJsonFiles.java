@@ -16,7 +16,6 @@ public class MergeJsonFiles {
             // Read JSON files
             JsonNode json1 = objectMapper.readTree(new File("D:\\Training_Assessment_Week_05\\src\\main\\java\\org\\example\\com\\day02_jason\\hands_on_practice_problem\\file1.json"));
             JsonNode json2 = objectMapper.readTree(new File("D:\\Training_Assessment_Week_05\\src\\main\\java\\org\\example\\com\\day02_jason\\hands_on_practice_problem\\file2.json"));
-
             // Merge JSON objects
             ObjectNode mergedJson = objectMapper.createObjectNode();
             mergedJson.setAll((ObjectNode) json1);
