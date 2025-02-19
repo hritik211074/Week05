@@ -6,7 +6,6 @@ import org.json.XML;
 public class JsonToXmlConverter {
     public static void main(String[] args) {
         // JSON Data
-
         String jsonData = """
        
        {
