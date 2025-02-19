@@ -10,6 +10,7 @@ public class ValidateEmailJson {
     public static void main(String[] args) throws Exception {
         // Define JSON Schema for email validation
         String schemaStr = """
+      
        {
            "$schema": "https://json-schema.org/draft/2020-12/schema",
            "type": "object",
