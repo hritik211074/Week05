@@ -28,7 +28,6 @@ class Student {
                 '}';
     }
 }
-
 public class CSVToJavaObjects {
     public static void main(String[] args) {
         String filePath = "D:\\Training_Assessment_Week_05\\src\\main\\java\\org\\example\\com\\day01_csv_io_file_handling\\students.csv";
