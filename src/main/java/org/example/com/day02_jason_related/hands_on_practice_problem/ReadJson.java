@@ -11,4 +11,5 @@ public class ReadJson {
         // Convert the string into a JSONObject and print all key-value pairs
         new JSONObject(content).toMap().forEach((k, v) -> System.out.println(k + ": " + v));
     }
+
 }
