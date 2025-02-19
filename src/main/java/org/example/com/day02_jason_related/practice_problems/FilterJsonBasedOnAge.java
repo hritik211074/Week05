@@ -11,7 +11,6 @@ class FilterJsonBasedOnAge {
     public static void main(String[] args) {
         // Enter the file path
         File filePath = new File("D:\\Training_Assessment_Week_05\\src\\main\\java\\org\\example\\com\\day02_jason\\practice_problems\\Person.Json");
-
         // Create an instance of Object mapper
         ObjectMapper objectMapper = new ObjectMapper();
 
