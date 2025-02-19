@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Amit Sharma",
+    "email": "amit.sharma@gmail.com",
+    "age": 20,
+    "city": "Mumbai"
+  },
+  {
+    "name": "Priya Verma",
+    "email": "priya.verma@gmail.com",
+    "age": 17,
+    "city": "Delhi"
+  },
+  {
+    "name": "Rajesh Kumar",
+    "email": "rajesh.kumar@gmail.com",
+    "age": 35,
+    "city": "Bangalore"
+  },
+  {
+    "name": "Sneha Iyer",
+    "email": "sneha.iyer@gmail.com",
+    "age": 29,
+    "city": "Chennai"
+  },
+  {
+    "name": "Vikram Choudhary",
+    "email": "vikram.choudhary@example.com",
+    "age": 32,
+    "city": "Kolkata"
+  }
+]
