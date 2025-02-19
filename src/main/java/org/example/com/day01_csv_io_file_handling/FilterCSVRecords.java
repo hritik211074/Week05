@@ -9,6 +9,7 @@ public class FilterCSVRecords {
         String filePath = "D:\\Training_Assessment_Week_05\\src\\main\\java\\org\\example\\com\\day01_csv_io_file_handling\\students.csv";
         String line;
 
+
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             // Read the header row
             String header = br.readLine();
