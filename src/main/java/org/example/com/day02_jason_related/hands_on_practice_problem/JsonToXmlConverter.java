@@ -6,14 +6,15 @@ import org.json.XML;
 public class JsonToXmlConverter {
     public static void main(String[] args) {
         // JSON Data
+
         String jsonData = """
+       
        {
            "name": "Suresh",
            "age": 30,
            "city": "Champaran"
        }
        """;
-
         // Convert JSON to XML
         JSONObject jsonObject = new JSONObject(jsonData);
         String xmlData = XML.toString(jsonObject, "root"); // "root" is the XML root element
