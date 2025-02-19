@@ -9,6 +9,7 @@ public class GenerateCSVReportFromDB {
         // JDBC URL for MySQL
         String jdbcUrl = "jdbc:mysql://localhost:3306/your_database";
 
+
         // Database username
         String jdbcUser = "hritik_7352";
 
