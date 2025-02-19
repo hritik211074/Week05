@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.IOException;
 
 // Create ValidateJson class to validate JSON
-class ValidatingJson {
+class ValidateJson {
     public static void main(String[] args) {
         // Create an instance of Object mapper
         ObjectMapper objectMapper = new ObjectMapper();
