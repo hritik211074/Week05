@@ -1,0 +1,24 @@
+{
+  "parser" : { },
+  "currentLocation" : {
+    "charOffset" : 157,
+    "sourceRef" : "D:\\Training_Assessment_Week_05\\src\\main\\java\\org\\example\\com\\day02_jason\\hands_on_practice_problem\\data.csv",
+    "lineNr" : 5,
+    "columnNr" : 80,
+    "byteOffset" : -1
+  },
+  "parserSchema" : {
+    "nullValueOrEmpty" : "",
+    "arrayElementSeparator" : ";",
+    "schemaType" : "CSV",
+    "nullValue" : null,
+    "columnSeparator" : ",",
+    "quoteChar" : 34,
+    "nullValueString" : null,
+    "columnDesc" : "[\"name\",\"age\",\"city\"]",
+    "columnNames" : [ "name", "age", "city" ],
+    "lineSeparator" : "\n",
+    "anyPropertyName" : null,
+    "escapeChar" : -1
+  }
+}

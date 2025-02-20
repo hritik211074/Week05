@@ -1,0 +1,12 @@
+{
+  "id": 201,
+  "name": "Rajesh Kumar",
+  "age": 32,
+  "email": "rajesh.kumar@example.com",
+  "address": {
+    "street": "12 MG Road",
+    "city": "Mumbai",
+    "zip": "400001"
+  },
+  "skills": ["Java", "Spring Boot", "MySQL"]
+}
