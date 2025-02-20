@@ -35,6 +35,7 @@ public class CsvToJsonConverter {
             CsvMapper csvMapper = new CsvMapper();
             MappingIterator<JsonNode> jsonTree = csvMapper.readerFor(JsonNode.class)
                     .with(csvSchema)
+
                     .readValues(csvFile);
 
             List<JsonNode> jsonList = jsonTree.readAll();
