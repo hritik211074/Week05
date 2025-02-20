@@ -8,7 +8,7 @@ public class FilterJson {
 
     public static void main(String[] args) throws Exception {
         // Read JSON file as a string
-        String content = Files.readString(Paths.get("D:\\Training_Assessment_Week_05\\src\\main\\java\\org\\example\\com\\day02_jason\\hands_on_practice_problem\\users.json"));
+        String content = Files.readString(Paths.get("D:\\Training_Assessment_Week_05\\src\\main\\java\\org\\example\\com\\day02_jason_related\\hands_on_practice_problem\\users.json"));
 
         // Convert to JSON array
         JSONArray users = new JSONArray(content);
