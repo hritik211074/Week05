@@ -17,7 +17,7 @@ public class CsvToJsonConverter {
     public static void main(String[] args) {
         try {
             // CSV file path
-            File csvFile = new File("D:\\Training_Assessment_Week_05\\src\\main\\java\\org\\example\\com\\day02_jason\\hands_on_practice_problem\\data.csv");
+            File csvFile = new File("D:\\Training_Assessment_Week_05\\src\\main\\java\\org\\example\\com\\day02_jason_related\\hands_on_practice_problem\\data.csv");
 
             // Print the absolute path for debugging
             System.out.println("CSV file path: " + csvFile.getAbsolutePath());
@@ -48,7 +48,7 @@ public class CsvToJsonConverter {
             System.out.println("JSON output: " + jsonOutput);
 
             // Optionally, write the JSON output to a file
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File("data.json"), jsonTree);
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File("D:\\Training_Assessment_Week_05\\src\\main\\java\\org\\example\\com\\day02_jason_related\\hands_on_practice_problem\\data.json"), jsonTree);
 
         } catch (IOException e) {
             System.err.println("Error occurred while converting CSV to JSON: " + e.getMessage());
