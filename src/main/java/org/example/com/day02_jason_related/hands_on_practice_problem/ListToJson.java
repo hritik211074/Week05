@@ -23,7 +23,7 @@ public class ListToJson {
 
     public static void main(String[] args) {
         // Create a list of Person objects
-        List<Person> people = List.of(new Person("Alice", 30), new Person("Bob", 25));
+        List<Person> people = List.of(new Person("suresh", 30), new Person("mahesh", 25));
 
         // Convert list to JSONArray
         JSONArray jsonArray = new JSONArray(people.stream().map(Person::toJson).toArray());
