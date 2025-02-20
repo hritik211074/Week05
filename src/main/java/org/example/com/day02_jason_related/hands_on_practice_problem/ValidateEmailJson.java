@@ -1,51 +1,54 @@
 package org.example.com.day02_jason_related.hands_on_practice_problem;
 
+import com.github.fge.jsonschema.main.JsonSchemaFactory;
+import com.github.fge.jsonschema.main.JsonValidator;
+import com.github.fge.jsonschema.core.report.ProcessingReport;
+
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.networknt.schema.*;
-
-import java.util.Set;
 
 public class ValidateEmailJson {
-    public static void main(String[] args) throws Exception {
-        // Define JSON Schema for email validation
-        String schemaStr = """
-      
-       {
-           "$schema": "https://json-schema.org/draft/2020-12/schema",
-           "type": "object",
-           "properties": {
-               "email": {
-                   "type": "string",
-                   "format": "email"
-               }
-           },
-           "required": ["email"]
-       }""";
+    public static void main(String[] args) {
+        try {
+            // JSON Schema
+            String schemaString = """
+                {
+                  "$schema": "https://json-schema.org/draft/2020-12/schema",
+                  "type": "object",
+                  "properties": {
+                    "email": {
+                      "type": "string",
+                      "format": "email"
+                    }
+                  },
+                  "required": ["email"]
+                }
+                """;
 
-        // JSON data to validate
-        String jsonData = "{ \"email\": \"test@example.com\" }";
+            // JSON Data (to be validated)
+            String jsonString = """
+                {
+                  "email": "hritik@example.com"
+                }
+                """;
 
-        // Convert JSON string to Jackson JsonNode
-        ObjectMapper objectMapper = new ObjectMapper();
-        JsonNode schemaNode = objectMapper.readTree(schemaStr);
-        JsonNode jsonNode = objectMapper.readTree(jsonData);
+            ObjectMapper mapper = new ObjectMapper();
+            JsonNode schemaNode = mapper.readTree(schemaString);
+            JsonNode jsonNode = mapper.readTree(jsonString);
 
-        // Create JSON Schema validator with format validation enabled
-        SchemaValidatorsConfig config = new SchemaValidatorsConfig();
-        config.addFormat("email", new EmailFormatValidator()); // Manual email format validator
+            // Create JSON Schema Validator
+            JsonValidator validator = JsonSchemaFactory.byDefault().getValidator();
+            ProcessingReport report = validator.validate(schemaNode, jsonNode);
 
-        JsonSchemaFactory schemaFactory = JsonSchemaFactory.getInstance(SpecVersion.VersionFlag.V7);
-        JsonSchema schema = schemaFactory.getSchema(schemaNode, config);
+            // Print validation result
+            if (report.isSuccess()) {
+                System.out.println("Valid JSON: " + jsonString);
+            } else {
+                System.out.println("Invalid JSON: " + report);
+            }
 
-        // Validate JSON data
-        Set<ValidationMessage> errors = schema.validate(jsonNode);
-
-        // Print validation result
-        if (errors.isEmpty()) {
-            System.out.println("Valid email!");
-        } else {
-            System.out.println("Invalid email: " + errors);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }
